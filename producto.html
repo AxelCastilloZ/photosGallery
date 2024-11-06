@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Producto</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><img class="header__logo" src="./images/logo.png" alt="logo principal"
+      /></a>
+    </header>
+
+    <nav class="navegacion">
+      <a class="navegacion__enlace" href="index.html">Tienda</a>
+      <a
+        class="navegacion__enlace navegacion__enlace--activo"
+        href="nosotros.html"
+        >Nosotros</a
+      >
+    </nav>
+
+    <main class="contenedor">
+      <h1>Camiseta Exclusiva</h1>
+      <div class="contenidoCamisa">
+        <img class="imagen sombra" src="./images/3.jpg" alt="Imagen camiseta" />
+        <div>
+          <p>
+            Esta camiseta exclusiva combina estilo y comodidad, perfecta para quienes buscan una prenda versátil y moderna. Su diseño se adapta a cualquier ocasión, ya sea para un día casual o una salida con amigos.
+          </p>
+          <p>
+            Confeccionada con materiales de alta calidad, esta prenda garantiza durabilidad y confort. Además, está disponible en varias tallas para ajustarse a todos los gustos y estilos.
+          </p>
+          <form class="formulario">
+            <select class="formulario__campo formulario__select-talla">
+                <option disabled selected>--Seleccione la talla--</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+              
+            <input
+              class="formulario__campo"
+              type="number"
+              placeholder="Cantidad"
+              required
+            />
+            <input
+              class="formulario__submit sombra"
+              type="submit"
+              value="Agregar al carrito"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__texto">Tienda -- Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
